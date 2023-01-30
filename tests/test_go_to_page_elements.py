@@ -7,6 +7,6 @@ def test1_go_to_page_elements(browser):
     c = ElementsPage(browser)
 
     b.visit()
-    #assert b.equal_url()
-    #b.btn_elements.click()
-    #assert c.equal_url()
+    assert b.equal_url()
+    b.btn_elements.click_elem()
+    assert c.equal_url()

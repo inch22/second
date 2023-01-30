@@ -8,10 +8,12 @@ class BasePage:
     def visit(self):
         return self.driver.get(self.base_url)
 
-    def find_element(self, locator):
-        self.locator = locator
-        return self.driver.find_element(By.CSS_SELECTOR, locator)
 
     def get_url(self):
         return self.driver.current_url
+
+    def equal_url(self): #создание метода для проверки урла, чтобв проверить, что находимся на нужной странице
+        if self.get_url() == self.base_url:
+            return True
+        return False
 

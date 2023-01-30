@@ -10,7 +10,7 @@ class ElementsPage(BasePage):
         self.icon = WebElement(driver, '#app > header > a > img')
         self.btn_sidebar_first = WebElement(driver, '#app > div > div > div.row > div:nth-child(1) > div > div > div:nth-child(1) > span > div')
         self.btn_sidebar_first_textbox = WebElement(driver, '#app > div > div > div.row > div:nth-child(1) > div > div > div:nth-child(1) > div > ul > #item-0')
-        #self.icon = WebElement(driver, '#app > header > a > img')
+
         #self.btn_sidebar_first = WebElement(driver, '#app > div:nth-child(1) > span > div')
         #self.btn_sidebar_first_textbox = WebElement(driver, '#app > div:nth-child(1) > div > ul > #item-0 > span')
 
