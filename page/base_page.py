@@ -21,7 +21,7 @@ class BasePage:
         return self.driver.current_url #получить текущий url
 
     def get_title(self):
-        return self.driver.title
+        return self.driver.title #получить title  страницы
 
     def equal_url(self): #метод должен вызывать get_url сравнивать его со строкой 'https://demoqa.com/'
                          #возвращать True если проверка пройдена и False если нет
