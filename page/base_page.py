@@ -6,7 +6,7 @@ class BasePage:
         self.base_url = base_url #"https://demoqa.com/" базовая страница
 
     def visit(self):
-        return self.driver.get(self.base_url) #
+        return self.driver.get(self.base_url) #возвращает переход на страницу
 
     def back(self):
         self.driver.back() #стрелка назад в браузере
