@@ -11,6 +11,5 @@ class ElementsPage(BasePage):
         self.btn_sidebar_first = WebElement(driver, '#app > div > div > div.row > div:nth-child(1) > div > div > div:nth-child(1) > span > div')
         self.btn_sidebar_first_textbox = WebElement(driver, '#app > div > div > div.row > div:nth-child(1) > div > div > div:nth-child(1) > div > ul > #item-0')
         self.btn_first_menu = WebElement(driver, "div:nth-child(1) > div > ul > li")
-        self.btn_modal_menu = WebElement(driver, 'div:nth-child(3) > div > ul > li')
-        self.btn_allerts_menu = WebElement(driver, 'div:nth-child(3) > div > ul > li#item-1')
+
 
