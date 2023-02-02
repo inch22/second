@@ -2,6 +2,7 @@ import time
 from page.modal_page import Modal
 from page.elements_page import ElementsPage
 
+
 # задача 1
 def test_elements_dz(browser):
     modal = Modal(browser)
@@ -9,7 +10,9 @@ def test_elements_dz(browser):
     modal.visit()
     assert elements_page.btn_modal_menu.check_count_elements(5)
 
+
 # задача 2
+
 def test_navigation_dz(browser):
     modal = Modal(browser)
     elements_page = ElementsPage(browser)
