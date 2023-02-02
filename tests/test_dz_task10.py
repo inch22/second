@@ -12,7 +12,6 @@ def test_elements_dz(browser):
 
 
 # задача 2
-
 def test_navigation_dz(browser):
     modal = Modal(browser)
     elements_page = ElementsPage(browser)
