@@ -1,6 +1,6 @@
 from page.base_page import BasePage
 from components.components import WebElement
-from page.elements_page import ElementsPage
+
 
 class Accordion(BasePage):
 
@@ -10,3 +10,4 @@ class Accordion(BasePage):
 
         self.one_section_btn = WebElement(driver, '#section1Heading')
         self.one_paragraph = WebElement(driver, '#section1Content > p')
+
