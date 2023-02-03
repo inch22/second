@@ -47,4 +47,11 @@ class WebElement:
         except TimeoutException:
             return True
 
+    def send_keys(self, text: str): #метод ввода текст в поле
+        self.find_element().send_keys(text)
+
+    def click_forse(self): #метод принудительного нажатия
+        self.driver.execute_script("arguments[0].click();", self.find_element())
+
+
 

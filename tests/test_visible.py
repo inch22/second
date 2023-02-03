@@ -37,5 +37,10 @@ def test_visible_default_accordion(browser):
     assert accordion_page.one_paragraph.visible()
 
 
+#занятие 11
+def test_not_exist(browser):
+    accordion_page = Accordion(browser)
+    accordion_page.visit()
+    assert not accordion_page.not_elem.exist()
 
 

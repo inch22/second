@@ -10,4 +10,6 @@ class Accordion(BasePage):
 
         self.one_section_btn = WebElement(driver, '#section1Heading')
         self.one_paragraph = WebElement(driver, '#section1Content > p')
+        self.not_elem = WebElement(driver, 'p>p')
+
 

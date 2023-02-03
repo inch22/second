@@ -11,7 +11,3 @@ class Modal(BasePage):
         self.btn_allerts_menu = WebElement(driver, 'div:nth-child(3) > div > ul > li#item-1')
 
 
-class Alerts(BasePage):
-    def __init__(self, driver):
-        self.base_url = 'https://demoqa.com/alerts'
-        super().__init__(driver, self.base_url)

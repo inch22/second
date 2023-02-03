@@ -1,5 +1,5 @@
-
-from page.modal_page import Modal, Alerts
+from page.allerts_page import Alerts
+from page.modal_page import Modal
 from page.elements_page import ElementsPage
 
 
