@@ -10,7 +10,7 @@ def test_name_address(browser):
     time.sleep(2)
     text1.current_address.send_keys('Spb, Dostoevskaya str., 9')
     text1.btn_submit.click_elem()
-    time.sleep(2)
+    time.sleep(5)
 
     assert text1.name_text.get_text() == 'Name:Ivanov Ivan'
     assert text1.address_text.get_text() == 'Current Address :Spb, Dostoevskaya str., 9'
