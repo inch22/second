@@ -13,4 +13,6 @@ class TextboxPage(BasePage):
         self.btn_submit = WebElement(driver, '#submit')
         self.name_text = WebElement(driver, '#name')
         self.address_text = WebElement(driver, '#currentAddress.mb-1')
+        self.box_first_menu = WebElement(driver, locator="div.row > div:nth-child(1) > div > div > div:nth-child(1) > div")
+        self.btn_first = WebElement(driver, locator="div > div > div:nth-child(1) > span")
 
