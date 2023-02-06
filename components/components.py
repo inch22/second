@@ -1,6 +1,6 @@
 from selenium.common import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
-import time
+from selenium.webdriver.common.keys import Keys
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -52,6 +52,11 @@ class WebElement:
 
     def click_forse(self): #метод принудительного нажатия
         self.driver.execute_script("arguments[0].click();", self.find_element())
+
+
+    def clear(self): #метод очистки поля с текстом
+        self.find_element().send_keys(Keys.COMMAND + 'a')
+        self.find_element().send_keys(Keys.DELETE)
 
 
 
