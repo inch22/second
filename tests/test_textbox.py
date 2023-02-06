@@ -1,5 +1,4 @@
 from page.textbox_page import TextboxPage
-from page.elements_page import ElementsPage
 import time
 from selenium.webdriver.common.keys import Keys
 
